@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "news/wsgi.py",
+      "src": "newsapi/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "news/wsgi.py"
+      "dest": "newsapi/wsgi.py"
     }
   ]
 }
